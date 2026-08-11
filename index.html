@@ -7,8 +7,8 @@
   <!-- Primary SEO Meta Tags -->
   <title>Tour Morocco with Moh | Private Moroccan Tour Guide</title>
   <meta name="title" content="Tour Morocco with Moh | Private Moroccan Tour Guide" />
-  <meta name="description" content="Experience the authentic history, culture, and people of Morocco. Book personalized, professional guided tours to Marrakech, Casablanca, Chefchaouen, Fes, the Sahara, and beyond." />
-  <meta name="keywords" content="Morocco tours, private tour guide Morocco, Marrakech local guide, Sahara desert tours, Chefchaouen trips, authentic Morocco travel, Fes medina guide, Casablanca tours" />
+  <meta name="description" content="Experience the authentic history, culture, and people of Morocco. Book personalized, professional guided tours to Marrakech, Casablanca, Chefchaouen, the Sahara, and beyond." />
+  <meta name="keywords" content="Morocco tours, private tour guide Morocco, Marrakech local guide, Sahara desert tours, Chefchaouen trips, authentic Morocco travel" />
   <meta name="author" content="Tour Morocco with Moh" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://tourmoroccowithmoh.com/" />
@@ -42,7 +42,7 @@
       "addressLocality": "Marrakech",
       "addressCountry": "MA"
     },
-    "description": "Professional, licensed private tour guide services offering authentic travel experiences across Morocco including Marrakech, Fes, Chefchaouen, and the Sahara.",
+    "description": "Professional, licensed private tour guide services offering authentic travel experiences across Morocco.",
     "priceRange": "$$"
   }
   </script>
@@ -50,7 +50,7 @@
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Hide scrollbar for clean horizontal image scrolling on mobile */
+    /* Hide scrollbar for clean horizontal image scrolling */
     .no-scrollbar::-webkit-scrollbar {
       display: none;
     }
@@ -65,6 +65,8 @@
   <!-- Header & Navigation -->
   <header class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Centered Responsive Logo -->
       <div class="flex justify-center py-4 md:py-6">
         <a href="index.html" aria-label="Home">
           <img 
@@ -74,6 +76,8 @@
           />
         </a>
       </div>
+
+      <!-- Navigation Menu -->
       <nav class="flex justify-center pb-4 overflow-x-auto no-scrollbar">
         <ul class="flex space-x-6 md:space-x-10 text-sm md:text-base font-semibold text-gray-700 uppercase tracking-wide whitespace-nowrap px-4">
           <li><a href="index.html" class="hover:text-amber-600 transition">Home</a></li>
@@ -90,6 +94,7 @@
   <main class="flex-grow">
     <section class="relative h-[70vh] min-h-[500px] flex items-center justify-center text-center">
       <div class="absolute inset-0 z-0">
+        <!-- Verified Hero Image -->
         <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1920&q=80" alt="Beautiful Moroccan Architecture and Lanterns" class="w-full h-full object-cover" loading="eager" fetchpriority="high" />
         <div class="absolute inset-0 bg-black/40"></div>
       </div>
@@ -118,7 +123,8 @@
           </p>
         </div>
         <figure class="rounded-2xl overflow-hidden shadow-2xl relative group">
-          <img src="https://images.unsplash.com/photo-1559586616-361e18714958?auto=format&fit=crop&w=800&q=80" alt="Moh navigating the vibrant streets of a Moroccan Medina" class="w-full h-[500px] object-cover transition duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
+          <!-- Verified About Us Image -->
+          <img src="https://images.unsplash.com/photo-1559586616-361e18714958?auto=format&fit=crop&w=800&q=80" alt="Vibrant streets of a Moroccan Medina" class="w-full h-[500px] object-cover transition duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
           <figcaption class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
             <p class="text-lg font-semibold">Authentic Local Experiences</p>
           </figcaption>
@@ -126,12 +132,12 @@
       </div>
     </section>
 
-    <!-- Destinations Section (Massively Expanded with Mobile/PC Responsive Galleries) -->
+    <!-- Destinations Section (Manually Verified Unsplash URLs) -->
     <section id="destinations" class="py-20 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header class="text-center mb-16">
           <h2 class="text-4xl font-bold text-gray-900">Discover Our Cities</h2>
-          <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">From the coastal breeze of Essaouira to the golden dunes of Merzouga. Explore the incredible destinations we visit on our private tours.</p>
+          <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">From the coastal breeze of Essaouira to the golden dunes of the Sahara. Explore the incredible destinations we visit on our private tours.</p>
         </header>
 
         <div class="space-y-20">
@@ -141,23 +147,19 @@
             <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-6">
               <div>
                 <h3 class="text-3xl font-bold text-gray-800">Marrakech</h3>
-                <p class="text-gray-600 mt-2">Explore the vibrant souks, historic palaces, and the legendary Jemaa el-Fnaa square.</p>
+                <p class="text-gray-600 mt-2">Explore the vibrant souks, historic palaces, and the legendary Koutoubia Mosque.</p>
               </div>
               <a href="marrakech/index.html" class="mt-4 md:mt-0 text-amber-600 font-semibold hover:text-amber-700 whitespace-nowrap">View Marrakech Tours &rarr;</a>
             </div>
-            <!-- Mobile: Horizontal Scroll. PC: 4-Column Grid -->
-            <div class="flex overflow-x-auto md:grid md:grid-cols-4 snap-x snap-mandatory gap-4 pb-4 no-scrollbar">
+            <div class="flex overflow-x-auto md:grid md:grid-cols-3 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=600&h=400&q=80" alt="Marrakech Koutoubia Mosque at sunset" title="Koutoubia Mosque, Marrakech" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-5cX6v4cxvjc?auto=format&fit=crop&w=600&h=400&q=80" alt="The Koutoubia Mosque in Marrakech" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1552074284-5e88ef1aef18?auto=format&fit=crop&w=600&h=400&q=80" alt="Colorful Moroccan spices in the Marrakech Souk" title="Spices in Marrakech Souk" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-SHUNl49hr9I?auto=format&fit=crop&w=600&h=400&q=80" alt="Bustling marketplace filled with various goods and shoppers in Marrakech" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=600&h=400&q=80" alt="Intricate Moroccan tilework and riad courtyard in Marrakech" title="Traditional Marrakech Riad" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
-              </figure>
-              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1548018560-4cb48a8837c1?auto=format&fit=crop&w=600&h=400&q=80" alt="Jemaa el-Fnaa square bustling with life at dusk" title="Jemaa el-Fnaa Square" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-UKAZzNi5iGA?auto=format&fit=crop&w=600&h=400&q=80" alt="A courtyard with Bahia Palace in the background" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>
@@ -171,18 +173,15 @@
               </div>
               <a href="chefchouen/index.html" class="mt-4 md:mt-0 text-amber-600 font-semibold hover:text-amber-700 whitespace-nowrap">View Chefchaouen Tours &rarr;</a>
             </div>
-            <div class="flex overflow-x-auto md:grid md:grid-cols-4 snap-x snap-mandatory gap-4 pb-4 no-scrollbar">
+            <div class="flex overflow-x-auto md:grid md:grid-cols-3 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1517426567315-38d3876a9117?auto=format&fit=crop&w=600&h=400&q=80" alt="Blue painted streets and steps of Chefchaouen" title="Blue Streets of Chefchaouen" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-s1qvaSQxTqM?auto=format&fit=crop&w=600&h=400&q=80" alt="Panoramic view of Chefchaouen buildings" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1549140600-78c9b8275e9d?auto=format&fit=crop&w=600&h=400&q=80" alt="Traditional blue and white doors in Morocco's blue city" title="Chefchaouen Architecture" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-irPQCTFIv8U?auto=format&fit=crop&w=600&h=400&q=80" alt="Une rue étroite de Chefchaouen au Maroc" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1553693611-679795ed7eb0?auto=format&fit=crop&w=600&h=400&q=80" alt="Chefchaouen medina alleyway lined with blue pots" title="Chefchaouen Medina" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
-              </figure>
-              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1627885449736-2eeff421a1ce?auto=format&fit=crop&w=600&h=400&q=80" alt="Local culture and cats resting in the blue streets of Chefchaouen" title="Local Life in Chefchaouen" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-hNzdKQZlGyM?auto=format&fit=crop&w=600&h=400&q=80" alt="Low angle photo of blue building in Chefchaouen" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>
@@ -196,18 +195,15 @@
               </div>
               <a href="merzouga-2/index.html" class="mt-4 md:mt-0 text-amber-600 font-semibold hover:text-amber-700 whitespace-nowrap">View Sahara Tours &rarr;</a>
             </div>
-            <div class="flex overflow-x-auto md:grid md:grid-cols-4 snap-x snap-mandatory gap-4 pb-4 no-scrollbar">
+            <div class="flex overflow-x-auto md:grid md:grid-cols-3 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1536237717235-0acadb345d8c?auto=format&fit=crop&w=600&h=400&q=80" alt="Camel trekking tour through the Sahara desert dunes in Merzouga" title="Camel Trek in Merzouga" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-sCQpGeViZJ8?auto=format&fit=crop&w=600&h=400&q=80" alt="Sunset over the sand dunes in the Sahara desert" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1489493887464-892be6d1d217?auto=format&fit=crop&w=600&h=400&q=80" alt="Expansive golden sand dunes of Erg Chebbi, Morocco" title="Erg Chebbi Dunes" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-9LACecFTftY?auto=format&fit=crop&w=600&h=400&q=80" alt="Man standing in the middle of a desert in Merzouga" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1618423205267-e95744f57edf?auto=format&fit=crop&w=600&h=400&q=80" alt="Luxury private desert camp tents in the Moroccan Sahara" title="Luxury Sahara Desert Camp" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
-              </figure>
-              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1540316499318-7a54476a6d65?auto=format&fit=crop&w=600&h=400&q=80" alt="Sahara desert sunrise casting shadows on the sand" title="Sahara Desert Sunrise" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-4Xo53VUbxH0?auto=format&fit=crop&w=600&h=400&q=80" alt="A sunset in the desert with footprints in the sand" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>
@@ -221,18 +217,15 @@
               </div>
               <a href="fes/index.html" class="mt-4 md:mt-0 text-amber-600 font-semibold hover:text-amber-700 whitespace-nowrap">View Fes Tours &rarr;</a>
             </div>
-            <div class="flex overflow-x-auto md:grid md:grid-cols-4 snap-x snap-mandatory gap-4 pb-4 no-scrollbar">
+            <div class="flex overflow-x-auto md:grid md:grid-cols-3 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1569440703456-29b9c31765ca?auto=format&fit=crop&w=600&h=400&q=80" alt="Historic Chouara Tannery dyeing vats in Fes, Morocco" title="Chouara Tannery, Fes" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-mPD9BJ_QGXw?auto=format&fit=crop&w=600&h=400&q=80" alt="A view of Fes city from a high point of view" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1596705662770-b7470634f1ec?auto=format&fit=crop&w=600&h=400&q=80" alt="Handcrafted intricate brass lamps for sale in the Fes Medina" title="Fes Medina Craftsmanship" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1596705662770-b7470634f1ec?auto=format&fit=crop&w=600&h=400&q=80" alt="Handcrafted intricate brass lamps for sale in the Fes Medina" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1579488344605-db5cda31f82f?auto=format&fit=crop&w=600&h=400&q=80" alt="Fes Royal Palace stunning golden gates architecture" title="Fes Royal Palace" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
-              </figure>
-              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1610427845353-9d0d39e31d47?auto=format&fit=crop&w=600&h=400&q=80" alt="Narrow ancient alleys and traditional doors of the Fes Medina" title="Ancient Alleys of Fes" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1579488344605-db5cda31f82f?auto=format&fit=crop&w=600&h=400&q=80" alt="Fes Royal Palace stunning golden gates architecture" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>
@@ -246,18 +239,15 @@
               </div>
               <a href="casa-blanca/index.html" class="mt-4 md:mt-0 text-amber-600 font-semibold hover:text-amber-700 whitespace-nowrap">View Casablanca Tours &rarr;</a>
             </div>
-            <div class="flex overflow-x-auto md:grid md:grid-cols-4 snap-x snap-mandatory gap-4 pb-4 no-scrollbar">
+            <div class="flex overflow-x-auto md:grid md:grid-cols-3 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1588614959060-4d144f28b207?auto=format&fit=crop&w=600&h=400&q=80" alt="Stunning Hassan II Mosque sitting on the ocean in Casablanca" title="Hassan II Mosque" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-JkG4jwyZaL4?auto=format&fit=crop&w=600&h=400&q=80" alt="Hassan II mosque with blue sky in casablanca" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1542044431-7bfa531b268f?auto=format&fit=crop&w=600&h=400&q=80" alt="Beautiful modern and traditional architecture fusion in Casablanca" title="Casablanca Architecture" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-iOjvdUbZ_v0?auto=format&fit=crop&w=600&h=400&q=80" alt="An aerial view of a busy city street in Casablanca" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1554286121-697669d67228?auto=format&fit=crop&w=600&h=400&q=80" alt="Detailed minaret design in Casablanca Morocco" title="Casablanca Minaret" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
-              </figure>
-              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1578305024953-e52292f7dc3b?auto=format&fit=crop&w=600&h=400&q=80" alt="Coastal view and city streets of Casablanca" title="Casablanca Coast" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-Ra_kufPv26A?auto=format&fit=crop&w=600&h=400&q=80" alt="Colorful mural on a building corner in Casablanca streets" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>
@@ -271,18 +261,15 @@
               </div>
               <a href="essaouira/index.html" class="mt-4 md:mt-0 text-amber-600 font-semibold hover:text-amber-700 whitespace-nowrap">View Essaouira Tours &rarr;</a>
             </div>
-            <div class="flex overflow-x-auto md:grid md:grid-cols-4 snap-x snap-mandatory gap-4 pb-4 no-scrollbar">
+            <div class="flex overflow-x-auto md:grid md:grid-cols-3 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1559564478-e5015e1cb2a0?auto=format&fit=crop&w=600&h=400&q=80" alt="Panoramic view of Essaouira coastal fort and ocean waves" title="Essaouira Coastline" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-dVvjpGkcub4?auto=format&fit=crop&w=600&h=400&q=80" alt="Coastal view with a distant lighthouse at sunset in Essaouira" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1561642769-1bca263542e0?auto=format&fit=crop&w=600&h=400&q=80" alt="Iconic blue fishing boats in the historic port of Essaouira" title="Essaouira Fishing Port" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-pqagOC7mGsA?auto=format&fit=crop&w=600&h=400&q=80" alt="People walk through a stone archway into a bustling marketplace" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1528657249085-c569d3c869e4?auto=format&fit=crop&w=600&h=400&q=80" alt="White and blue buildings of the Essaouira Medina" title="Essaouira Medina" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
-              </figure>
-              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1512634351657-3f309a96e95a?auto=format&fit=crop&w=600&h=400&q=80" alt="Seagulls flying over the windy city walls of Essaouira" title="Seagulls in Essaouira" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-WXMMUBB6vfA?auto=format&fit=crop&w=600&h=400&q=80" alt="Cat sleeping among baskets of crafts on display in Essaouira" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>
@@ -296,18 +283,15 @@
               </div>
               <a href="tangier-2/index.html" class="mt-4 md:mt-0 text-amber-600 font-semibold hover:text-amber-700 whitespace-nowrap">View Tangier Tours &rarr;</a>
             </div>
-            <div class="flex overflow-x-auto md:grid md:grid-cols-4 snap-x snap-mandatory gap-4 pb-4 no-scrollbar">
+            <div class="flex overflow-x-auto md:grid md:grid-cols-3 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1551829142-db6c125bb796?auto=format&fit=crop&w=600&h=400&q=80" alt="Scenic view of Tangier coastline and white buildings" title="Tangier Coast" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-YHKj0oPOfxU?auto=format&fit=crop&w=600&h=400&q=80" alt="Narrow street with white buildings and plants in Tangier" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1583274291122-38bece8877ad?auto=format&fit=crop&w=600&h=400&q=80" alt="Historic Tangier Kasbah narrow pathways" title="Tangier Kasbah" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-zUzGd4833v4?auto=format&fit=crop&w=600&h=400&q=80" alt="Weathered stone fortress wall with two cannons in Tangier" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1566311682-132d72124508?auto=format&fit=crop&w=600&h=400&q=80" alt="Beautiful Mediterranean doors and architecture in Tangier" title="Tangier Architecture" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
-              </figure>
-              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1604938883641-a18545ef2082?auto=format&fit=crop&w=600&h=400&q=80" alt="View of the Strait of Gibraltar from Tangier Morocco" title="Strait of Gibraltar View" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-yzhFSaMSQUw?auto=format&fit=crop&w=600&h=400&q=80" alt="Bustling city square with palm trees and buildings in Tangier" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>

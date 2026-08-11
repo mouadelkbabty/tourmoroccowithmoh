@@ -116,6 +116,54 @@
       box-shadow: 0 0 0 3px rgba(189,91,56,0.35);
       border-color: var(--terracotta);
     }
+
+    /* Floating / auto-scrolling testimonial marquee */
+    .marquee-track{
+      display:flex;
+      gap:1.5rem;
+      width:max-content;
+      padding: 0 1.5rem;
+      animation: marquee 42s linear infinite;
+    }
+    .marquee-track:hover{ animation-play-state: paused; }
+    @keyframes marquee{
+      from{ transform: translateX(0); }
+      to{ transform: translateX(-50%); }
+    }
+    .review-card{
+      background:#fff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      width: 300px;
+      flex: 0 0 auto;
+      box-shadow: 0 10px 25px -10px rgba(42,33,26,0.18);
+      border-bottom: 3px solid var(--gold);
+      transform: translateY(0);
+      animation: floatCard 5s ease-in-out infinite;
+    }
+    .review-card:nth-child(2n){ animation-delay: -1.2s; }
+    .review-card:nth-child(3n){ animation-delay: -2.6s; }
+    @keyframes floatCard{
+      0%, 100%{ transform: translateY(0); }
+      50%{ transform: translateY(-8px); }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .marquee-track{ animation: none; }
+      .review-card{ animation: none; }
+    }
+
+    /* Floating WhatsApp button */
+    .whatsapp-float{
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      z-index: 60;
+      background:#25D366;
+      color:#fff;
+      box-shadow: 0 10px 25px -8px rgba(0,0,0,0.45);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .whatsapp-float:hover{ transform: translateY(-3px); box-shadow: 0 14px 30px -8px rgba(0,0,0,0.5); }
   </style>
 </head>
 <body class="text-[var(--ink)] antialiased flex flex-col min-h-screen">
@@ -135,7 +183,7 @@
       <nav class="flex justify-center pb-4 overflow-x-auto no-scrollbar">
         <ul class="flex space-x-6 md:space-x-10 text-sm md:text-base font-semibold text-[var(--ink)]/80 uppercase tracking-wide whitespace-nowrap px-4">
           <li><a href="index.html" class="hover:text-[var(--terracotta)] transition">Home</a></li>
-          <li><a href="#about" class="hover:text-[var(--terracotta)] transition">About Us</a></li>
+          <li><a href="about.html" class="hover:text-[var(--terracotta)] transition">About Us</a></li>
           <li><a href="#destinations" class="hover:text-[var(--terracotta)] transition">Destinations</a></li>
           <li><a href="#celebrations" class="hover:text-[var(--terracotta)] transition">Celebrations</a></li>
           <li><a href="tours/index.html" class="hover:text-[var(--terracotta)] transition">Tours</a></li>
@@ -177,14 +225,17 @@
           <p class="text-gray-600 mb-4 leading-relaxed text-lg">
             Welcome to <strong>Tour Morocco with Moh</strong>. Born and raised in the heart of Marrakech, I am a fully licensed, professional tour guide dedicated to sharing the true spirit of my homeland. I speak English, French, Spanish, and Darija, ensuring a seamless and enriching experience for travelers from all over the world.
           </p>
-          <p class="text-gray-600 leading-relaxed text-lg">
+          <p class="text-gray-600 leading-relaxed text-lg mb-6">
             Whether you want to explore ancient medinas, journey through the Sahara dunes, or discover hidden artisanal souks, I provide deeply personalized, private itineraries. When I am not guiding, my wife Lee—an artist and graphic designer—and I are constantly exploring to find the most beautiful, off-the-beaten-path locations for your next adventure.
           </p>
+          <a href="about.html" class="inline-flex items-center gap-2 text-[var(--terracotta)] font-bold hover:text-[var(--terracotta-dark)] transition">
+            Read Our Full Story <span aria-hidden="true">&rarr;</span>
+          </a>
         </div>
         <figure class="arch-frame-lg shadow-2xl relative group">
-          <img src="https://images.unsplash.com/photo-1559586616-361e18714958?auto=format&fit=crop&w=800&q=80" alt="Vibrant streets of a Moroccan Medina" class="w-full h-[500px] object-cover transition duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
+          <img src="images/couple.webp" alt="Moh and his wife Lee, founders of Tour Morocco with Moh, in a Fes riad" class="w-full h-[500px] object-cover transition duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
           <figcaption class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
-            <p class="text-lg font-semibold">Authentic Local Experiences</p>
+            <p class="text-lg font-semibold">Moh & Lee — Your Hosts in Morocco</p>
           </figcaption>
         </figure>
       </div>
@@ -384,6 +435,141 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section id="reviews" class="py-20 bg-[var(--sand)] overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center mb-14">
+          <p class="font-script text-2xl text-[var(--terracotta)] mb-1">Kind words</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900">What Travelers Say</h2>
+          <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">A few notes from guests we've had the pleasure of showing around Morocco.</p>
+        </header>
+      </div>
+
+      <!-- NOTE FOR SITE OWNER: the reviews below are placeholder examples so you can see the
+           layout in action. Swap them for your real Google / TripAdvisor / Facebook reviews
+           before publishing — see the assistant's reply for how to do this. -->
+      <div class="relative w-full">
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[var(--sand)] to-transparent z-10"></div>
+        <div class="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[var(--sand)] to-transparent z-10"></div>
+
+        <div class="marquee-track">
+          <!-- Set A -->
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--terracotta)] text-white flex items-center justify-center font-bold font-display text-lg">S</div>
+              <div>
+                <p class="font-semibold text-gray-900">Sarah T.</p>
+                <p class="text-xs text-gray-500">United States</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Moh planned our whole Sahara trip and it was flawless — the camp, the camel trek, the sunrise. He treated us like family from the first message.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--teal)] text-white flex items-center justify-center font-bold font-display text-lg">J</div>
+              <div>
+                <p class="font-semibold text-gray-900">James & Priya K.</p>
+                <p class="text-xs text-gray-500">United Kingdom</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">We got married in a riad Moh found for us in Fes. Every detail — musicians, henna, flowers — was exactly what we dreamed of. Unforgettable.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--gold)] text-white flex items-center justify-center font-bold font-display text-lg">A</div>
+              <div>
+                <p class="font-semibold text-gray-900">Amira B.</p>
+                <p class="text-xs text-gray-500">Canada</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Chefchaouen with Moh was the highlight of our whole trip. He knows every alley and every story behind them. Highly recommend for a private guide.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--terracotta-dark)] text-white flex items-center justify-center font-bold font-display text-lg">D</div>
+              <div>
+                <p class="font-semibold text-gray-900">The Delgado Family</p>
+                <p class="text-xs text-gray-500">Spain</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Traveling with three kids can be stressful, but Moh made Marrakech easy and fun for all of us. Patient, funny, and genuinely caring.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--teal-dark)] text-white flex items-center justify-center font-bold font-display text-lg">L</div>
+              <div>
+                <p class="font-semibold text-gray-900">Laurent M.</p>
+                <p class="text-xs text-gray-500">France</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Fes' medina is a maze — I would have been lost in ten minutes without Moh. His knowledge of the tanneries and the madrasas brought it all to life.</p>
+          </div>
+
+          <!-- Set B (duplicate for a seamless loop) -->
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--terracotta)] text-white flex items-center justify-center font-bold font-display text-lg">S</div>
+              <div>
+                <p class="font-semibold text-gray-900">Sarah T.</p>
+                <p class="text-xs text-gray-500">United States</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Moh planned our whole Sahara trip and it was flawless — the camp, the camel trek, the sunrise. He treated us like family from the first message.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--teal)] text-white flex items-center justify-center font-bold font-display text-lg">J</div>
+              <div>
+                <p class="font-semibold text-gray-900">James & Priya K.</p>
+                <p class="text-xs text-gray-500">United Kingdom</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">We got married in a riad Moh found for us in Fes. Every detail — musicians, henna, flowers — was exactly what we dreamed of. Unforgettable.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--gold)] text-white flex items-center justify-center font-bold font-display text-lg">A</div>
+              <div>
+                <p class="font-semibold text-gray-900">Amira B.</p>
+                <p class="text-xs text-gray-500">Canada</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Chefchaouen with Moh was the highlight of our whole trip. He knows every alley and every story behind them. Highly recommend for a private guide.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--terracotta-dark)] text-white flex items-center justify-center font-bold font-display text-lg">D</div>
+              <div>
+                <p class="font-semibold text-gray-900">The Delgado Family</p>
+                <p class="text-xs text-gray-500">Spain</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Traveling with three kids can be stressful, but Moh made Marrakech easy and fun for all of us. Patient, funny, and genuinely caring.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--teal-dark)] text-white flex items-center justify-center font-bold font-display text-lg">L</div>
+              <div>
+                <p class="font-semibold text-gray-900">Laurent M.</p>
+                <p class="text-xs text-gray-500">France</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Fes' medina is a maze — I would have been lost in ten minutes without Moh. His knowledge of the tanneries and the madrasas brought it all to life.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Moroccan-Styled Contact Section -->
     <section id="contact" class="tile-pattern py-20 relative">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -505,6 +691,18 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/212635220678" target="_blank" rel="noopener noreferrer"
+     aria-label="Chat with Moh on WhatsApp"
+     class="whatsapp-float hidden sm:inline-flex items-center gap-2 rounded-full py-3.5 px-5 font-bold">
+    💬 Chat with Moh
+  </a>
+  <a href="https://wa.me/212635220678" target="_blank" rel="noopener noreferrer"
+     aria-label="Chat with Moh on WhatsApp"
+     class="whatsapp-float sm:hidden flex items-center justify-center w-14 h-14 rounded-full text-2xl">
+    💬
+  </a>
 
   <script>
     // Pre-select the "subject" dropdown when arriving from a Celebrations card CTA.

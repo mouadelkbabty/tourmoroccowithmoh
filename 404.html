@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Page Not Found | Tour Morocco with Moh</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" type="image/png" href="wp-content/logo.png" />
+  <link rel="apple-touch-icon" href="wp-content/logo.png" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --sand:#F7F1E4; --sand-deep:#EFE4CE; --ink:#2A211A;
+      --terracotta:#BD5B38; --terracotta-dark:#9C4527;
+      --gold:#C6992F; --teal:#1E4E52; --teal-dark:#153A3D;
+    }
+    body{ font-family:'Jost', sans-serif; background-color: var(--sand); color:var(--ink); }
+    .font-display{ font-family:'Cormorant Garamond', serif; }
+    .font-script{ font-family:'Marck Script', cursive; }
+    .zellige-divider{
+      height:14px;
+      background-image: repeating-linear-gradient(45deg, var(--terracotta) 0 6px, transparent 6px 12px),
+                         repeating-linear-gradient(-45deg, var(--teal) 0 6px, transparent 6px 12px);
+      background-size: 24px 24px; opacity:0.9;
+    }
+    .btn-primary{ background-color: var(--terracotta); }
+    .btn-primary:hover{ background-color: var(--terracotta-dark); }
+  </style>
+</head>
+<body class="text-[var(--ink)] antialiased flex flex-col min-h-screen">
+
+  <header class="bg-[var(--sand)]/95 shadow-sm border-b border-[var(--gold)]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center py-6">
+        <a href="/index.html" aria-label="Home">
+          <img src="wp-content/logo.png" alt="Tour Morocco with Moh Official Logo" class="h-20 md:h-28 object-contain" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="zellige-divider"></div>
+
+  <main class="flex-grow flex items-center justify-center py-20 px-4">
+    <div class="max-w-xl mx-auto text-center">
+      <p class="font-script text-2xl text-[var(--terracotta)] mb-2">Looks like you took a wrong turn in the medina</p>
+      <h1 class="font-display text-6xl md:text-7xl font-bold text-gray-900 mb-6">404</h1>
+      <p class="text-gray-600 text-lg mb-10">This page doesn't exist — but there's still plenty of Morocco to explore. Here's how to find your way back.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/index.html" class="btn-primary text-white font-bold py-4 px-8 rounded-full transition shadow-lg">Back to Home</a>
+        <a href="/tours/index.html" class="bg-[var(--teal)] hover:bg-[var(--teal-dark)] text-white font-bold py-4 px-8 rounded-full transition shadow-lg">Browse Tours</a>
+      </div>
+      <p class="mt-10 text-sm text-gray-500">
+        Or message Moh directly on
+        <a href="https://wa.me/212635220678" target="_blank" rel="noopener noreferrer" class="text-[var(--terracotta)] font-semibold">WhatsApp</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="bg-slate-900 text-gray-400 py-10 text-center text-sm">
+    &copy; 2026 - Tour Morocco with Moh. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

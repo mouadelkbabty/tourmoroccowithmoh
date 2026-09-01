@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Tour Morocco with Moh | Guide Touristique Privé au Maroc</title>
+  <meta name="title" content="Tour Morocco with Moh | Guide Touristique Privé au Maroc" />
+  <meta name="description" content="Découvrez l'histoire, la culture et les habitants authentiques du Maroc. Réservez des circuits privés et personnalisés à Marrakech, Casablanca, Chefchaouen, Fès, le Sahara, et plus — ainsi que des mariages, anniversaires et célébrations sur mesure." />
+  <meta name="keywords" content="circuits Maroc, guide touristique privé Maroc, guide local Marrakech, circuits désert du Sahara, voyage Chefchaouen, guide médina Fès, circuits Casablanca, mariage au Maroc" />
+  <meta name="author" content="Tour Morocco with Moh" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://tourmoroccowithmoh.com/fr/" />
+  <link rel="icon" type="image/png" href="../wp-content/logo.png" />
+  <link rel="apple-touch-icon" href="../wp-content/logo.png" />
+
+  <link rel="alternate" hreflang="en" href="https://tourmoroccowithmoh.com/" />
+  <link rel="alternate" hreflang="fr" href="https://tourmoroccowithmoh.com/fr/" />
+  <link rel="alternate" hreflang="x-default" href="https://tourmoroccowithmoh.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tourmoroccowithmoh.com/fr/" />
+  <meta property="og:title" content="Tour Morocco with Moh | Guide Touristique Privé au Maroc" />
+  <meta property="og:description" content="Découvrez l'histoire, la culture et les habitants authentiques du Maroc. Réservez des circuits privés et personnalisés à Marrakech, Casablanca, Chefchaouen, le Sahara, et plus." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?fit=crop&w=1200&h=630&fm=jpg&q=80" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://tourmoroccowithmoh.com/fr/" />
+  <meta property="twitter:title" content="Tour Morocco with Moh | Guide Touristique Privé au Maroc" />
+  <meta property="twitter:description" content="Découvrez l'histoire, la culture et les habitants authentiques du Maroc avec un guide local." />
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?fit=crop&w=1200&h=630&fm=jpg&q=80" />
+
+  <!-- Schema.org Structured Data for Local Tour Guide Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Tour Morocco with Moh",
+    "image": "https://tourmoroccowithmoh.com/wp-content/logo.png",
+    "@id": "https://tourmoroccowithmoh.com/",
+    "url": "https://tourmoroccowithmoh.com/fr/",
+    "telephone": "+212635220678",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Marrakech",
+      "addressCountry": "MA"
+    },
+    "description": "Services de guide touristique privé, professionnel et agréé, offrant des expériences de voyage authentiques à travers le Maroc, incluant Marrakech, Fès, Chefchaouen et le Sahara, ainsi que des mariages, anniversaires et célébrations sur mesure.",
+    "priceRange": "$$",
+    "email": "tourmoroccowithmoh@gmail.com",
+    "sameAs": ["https://www.instagram.com/tourmoroccowithmoh/"],
+    "areaServed": ["Marrakech", "Casablanca", "Chefchaouen", "Merzouga", "Fès", "Essaouira", "Tanger"]
+  }
+  </script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts: Cormorant Garamond (display), Jost (body), Marck Script (used sparingly as a hand-lettered accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600;700&family=Marck+Script&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --sand:#F7F1E4;
+      --sand-deep:#EFE4CE;
+      --ink:#2A211A;
+      --terracotta:#BD5B38;
+      --terracotta-dark:#9C4527;
+      --gold:#C6992F;
+      --teal:#1E4E52;
+      --teal-dark:#153A3D;
+    }
+    html{ scroll-padding-top: 120px; }
+    body{ font-family:'Jost', sans-serif; background-color: var(--sand); color:var(--ink); }
+    .font-display{ font-family:'Cormorant Garamond', serif; }
+    .font-script{ font-family:'Marck Script', cursive; }
+
+    .no-scrollbar::-webkit-scrollbar{ display:none; }
+    .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
+
+    .arch-frame-lg{
+      border-radius: 50% 50% 10px 10px / 18% 18% 10px 10px;
+      overflow:hidden;
+    }
+
+    .zellige-divider{
+      height:14px;
+      background-image: repeating-linear-gradient(45deg, var(--terracotta) 0 6px, transparent 6px 12px),
+                         repeating-linear-gradient(-45deg, var(--teal) 0 6px, transparent 6px 12px);
+      background-size: 24px 24px;
+      opacity:0.9;
+    }
+
+    .tile-pattern{
+      background-color: var(--teal-dark);
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(198,153,47,0.35) 1.5px, transparent 1.5px);
+      background-size: 26px 26px;
+    }
+
+    .btn-primary{ background-color: var(--terracotta); }
+    .btn-primary:hover{ background-color: var(--terracotta-dark); }
+
+    .ring-focus:focus{
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(189,91,56,0.35);
+      border-color: var(--terracotta);
+    }
+
+    .marquee-track{
+      display:flex;
+      gap:1.5rem;
+      width:max-content;
+      padding: 0 1.5rem;
+      animation: marquee 42s linear infinite;
+    }
+    .marquee-track:hover{ animation-play-state: paused; }
+    @keyframes marquee{
+      from{ transform: translateX(0); }
+      to{ transform: translateX(-50%); }
+    }
+    .review-card{
+      background:#fff;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      width: 300px;
+      flex: 0 0 auto;
+      box-shadow: 0 10px 25px -10px rgba(42,33,26,0.18);
+      border-bottom: 3px solid var(--gold);
+      transform: translateY(0);
+      animation: floatCard 5s ease-in-out infinite;
+    }
+    .review-card:nth-child(2n){ animation-delay: -1.2s; }
+    .review-card:nth-child(3n){ animation-delay: -2.6s; }
+    @keyframes floatCard{
+      0%, 100%{ transform: translateY(0); }
+      50%{ transform: translateY(-8px); }
+    }
+
+    .hero-kenburns{ animation: kenburns 24s ease-in-out infinite alternate; }
+    @keyframes kenburns{ from{ transform: scale(1); } to{ transform: scale(1.12); } }
+
+    @media (prefers-reduced-motion: reduce){
+      .marquee-track{ animation: none; }
+      .review-card{ animation: none; }
+      .hero-kenburns{ animation: none; }
+    }
+
+    .whatsapp-float{
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      z-index: 60;
+      background:#25D366;
+      color:#fff;
+      box-shadow: 0 10px 25px -8px rgba(0,0,0,0.45);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .whatsapp-float:hover{ transform: translateY(-3px); box-shadow: 0 14px 30px -8px rgba(0,0,0,0.5); }
+  </style>
+</head>
+<body class="text-[var(--ink)] antialiased flex flex-col min-h-screen">
+
+  <!-- Quick Contact Bar -->
+  <div class="bg-[var(--teal-dark)] text-white text-xs md:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap justify-center items-center gap-x-6 gap-y-1">
+      <a href="tel:+212635220678" class="hover:text-[var(--gold)] transition">☏ +212 635-220678</a>
+      <a href="https://wa.me/212635220678" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--gold)] transition">💬 WhatsApp Moh</a>
+      <a href="mailto:tourmoroccowithmoh@gmail.com" class="hover:text-[var(--gold)] transition">✉ tourmoroccowithmoh@gmail.com</a>
+      <a href="../index.html" class="hover:text-[var(--gold)] transition font-semibold border-l border-white/30 pl-6">EN 🇬🇧</a>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="bg-[var(--sand)]/95 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-[var(--gold)]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-center py-4 md:py-6">
+        <a href="index.html" aria-label="Accueil">
+          <img
+            src="../wp-content/logo.png"
+            alt="Tour Morocco with Moh Logo Officiel"
+            class="h-20 md:h-28 object-contain"
+          />
+        </a>
+      </div>
+      <nav class="flex justify-center pb-4 overflow-x-auto no-scrollbar">
+        <ul class="flex space-x-6 md:space-x-10 text-sm md:text-base font-semibold text-[var(--ink)]/80 uppercase tracking-wide whitespace-nowrap px-4">
+          <li><a href="index.html" class="hover:text-[var(--terracotta)] transition">Accueil</a></li>
+          <li><a href="about.html" class="hover:text-[var(--terracotta)] transition">À Propos</a></li>
+          <li><a href="#destinations" class="hover:text-[var(--terracotta)] transition">Destinations</a></li>
+          <li><a href="#celebrations" class="hover:text-[var(--terracotta)] transition">Célébrations</a></li>
+          <li><a href="tours/index.html" class="hover:text-[var(--terracotta)] transition">Circuits</a></li>
+          <li><a href="blog/index.html" class="hover:text-[var(--terracotta)] transition">Blog</a></li>
+          <li><a href="#contact" class="hover:text-[var(--terracotta)] transition">Contactez-Nous</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-grow">
+    <section class="relative h-[70vh] min-h-[520px] flex items-center justify-center text-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=3840&q=80" alt="Belle architecture marocaine et lanternes" class="w-full h-full object-cover hero-kenburns" loading="eager" fetchpriority="high" />
+        <div class="absolute inset-0 bg-black/45"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 text-white">
+        <p class="font-script text-2xl md:text-3xl text-[var(--gold)] mb-2">Ahlan wa sahlan</p>
+        <h1 class="font-display text-5xl md:text-7xl font-bold mb-6 tracking-tight text-white drop-shadow-lg">Le Maroc Vous Attend</h1>
+        <p class="text-xl md:text-2xl font-light drop-shadow-md">
+          Notre histoire… notre culture… nos habitants.<br />
+          Vivez-le avec un expert local.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#destinations" class="btn-primary text-white font-bold py-4 px-8 rounded-full transition shadow-lg text-lg inline-block">Explorer les Destinations</a>
+          <a href="#celebrations" class="bg-white/10 border border-white/70 hover:bg-white/20 text-white font-bold py-4 px-8 rounded-full transition shadow-lg text-lg inline-block backdrop-blur-sm">Planifier une Célébration</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="zellige-divider"></div>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="font-script text-2xl text-[var(--terracotta)] mb-1">Votre guide à Marrakech</p>
+          <h2 class="font-display text-3xl md:text-5xl font-bold text-gray-900 mb-6">Votre Guide Touristique Professionnel</h2>
+          <p class="text-gray-600 mb-4 leading-relaxed text-lg">
+            Bienvenue chez <strong>Tour Morocco with Moh</strong>. Né et élevé au cœur de Marrakech, je suis un guide touristique professionnel entièrement agréé, dédié à partager le véritable esprit de mon pays. Je parle anglais, français, espagnol et darija, garantissant une expérience fluide et enrichissante pour les voyageurs du monde entier.
+          </p>
+          <p class="text-gray-600 leading-relaxed text-lg mb-6">
+            Que vous souhaitiez explorer d'anciennes médinas, parcourir les dunes du Sahara ou découvrir des souks artisanaux cachés, je propose des itinéraires privés profondément personnalisés. Quand je ne guide pas, ma femme Lee — artiste et graphiste — et moi explorons sans cesse pour trouver les plus beaux endroits hors des sentiers battus pour votre prochaine aventure.
+          </p>
+          <a href="about.html" class="inline-flex items-center gap-2 text-[var(--terracotta)] font-bold hover:text-[var(--terracotta-dark)] transition">
+            Lire Notre Histoire Complète <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+        <figure class="arch-frame-lg shadow-2xl relative group">
+          <img src="../images/couple.webp" alt="Moh et sa femme Lee, fondateurs de Tour Morocco with Moh, dans un riad à Fès" class="w-full h-[500px] object-cover transition duration-500 group-hover:scale-105" loading="lazy" decoding="async" />
+          <figcaption class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+            <p class="text-lg font-semibold">Moh & Lee — Vos Hôtes au Maroc</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-20 bg-[var(--sand)]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center mb-16">
+          <p class="font-script text-2xl text-[var(--terracotta)] mb-1">Où irons-nous ?</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900">Découvrez Nos Villes</h2>
+          <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">De la brise côtière d'Essaouira aux dunes dorées du Sahara. Explorez les destinations incroyables que nous visitons lors de nos circuits privés.</p>
+        </header>
+
+        <div class="space-y-20">
+
+          <!-- Marrakech -->
+          <article id="marrakech">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-6">
+              <div>
+                <h3 class="font-display text-3xl font-bold text-gray-800">Marrakech</h3>
+                <p class="text-gray-600 mt-2">Explorez la mosquée Koutoubia, le palais El Badi, des riads cachés et le quartier animé de Gueliz.</p>
+              </div>
+              <a href="marrakech/index.html" class="mt-4 md:mt-0 text-[var(--terracotta)] font-semibold hover:text-[var(--terracotta-dark)] whitespace-nowrap">Voir les Circuits Marrakech &rarr;</a>
+            </div>
+            <div class="flex overflow-x-auto md:grid md:grid-cols-2 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
+              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md relative group">
+                <img src="https://images.unsplash.com/photo-1544517333-3ceafba4d01b?auto=format&fit=crop&w=1600&h=1030&q=80" alt="Le minaret emblématique de la mosquée Koutoubia à Marrakech" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">Mosquée Koutoubia</div>
+              </figure>
+              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md relative group">
+                <img src="https://images.unsplash.com/photo-1653323792487-6ecc6217040b?auto=format&fit=crop&w=1600&h=1030&q=80" alt="Calèche passant devant la mosquée Koutoubia à Marrakech" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">Rues de la Médina</div>
+              </figure>
+            </div>
+          </article>
+
+          <!-- Casablanca -->
+          <article id="casablanca">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-6">
+              <div>
+                <h3 class="font-display text-3xl font-bold text-gray-800">Casablanca</h3>
+                <p class="text-gray-600 mt-2">Admirez la majestueuse Grande Mosquée Hassan II et le cœur moderne du Maroc.</p>
+              </div>
+              <a href="casablanca/index.html" class="mt-4 md:mt-0 text-[var(--terracotta)] font-semibold hover:text-[var(--terracotta-dark)] whitespace-nowrap">Voir les Circuits Casablanca &rarr;</a>
+            </div>
+            <div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-6 pb-4 justify-center">
+              <figure class="snap-center shrink-0 w-full max-w-2xl overflow-hidden rounded-xl shadow-md relative group">
+                <img src="https://images.unsplash.com/photo-1753219882136-059d4962607e?auto=format&fit=crop&w=2200&h=1210&q=80" alt="La Grande Mosquée Hassan II surplombant l'océan Atlantique à Casablanca" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">Grande Mosquée Hassan II</div>
+              </figure>
+            </div>
+          </article>
+
+          <!-- Chefchaouen -->
+          <article id="chefchaouen">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-6">
+              <div>
+                <h3 class="font-display text-3xl font-bold text-gray-800">Chefchaouen</h3>
+                <p class="text-gray-600 mt-2">Flânez dans les ruelles bleues, paisibles et photogéniques, de la célèbre Perle Bleue du Rif.</p>
+              </div>
+              <a href="chefchaouen/index.html" class="mt-4 md:mt-0 text-[var(--terracotta)] font-semibold hover:text-[var(--terracotta-dark)] whitespace-nowrap">Voir les Circuits Chefchaouen &rarr;</a>
+            </div>
+            <div class="flex overflow-x-auto md:grid md:grid-cols-2 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
+              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1751811106851-4a77d1890c55?auto=format&fit=crop&w=1600&h=1030&q=80" alt="Une ruelle bleue étroite dans la médina de Chefchaouen" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+              </figure>
+              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1730581822492-8a55ce0b7fde?auto=format&fit=crop&w=1600&h=1030&q=80" alt="Une ruelle bleue avec des oranges suspendues à Chefchaouen" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+              </figure>
+            </div>
+          </article>
+
+          <!-- Merzouga / Sahara -->
+          <article id="merzouga">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-6">
+              <div>
+                <h3 class="font-display text-3xl font-bold text-gray-800">Merzouga & Le Sahara</h3>
+                <p class="text-gray-600 mt-2">Vivez une randonnée à dos de chameau, des camps de luxe dans le désert et des nuits sous un ciel étoilé.</p>
+              </div>
+              <a href="merzouga/index.html" class="mt-4 md:mt-0 text-[var(--terracotta)] font-semibold hover:text-[var(--terracotta-dark)] whitespace-nowrap">Voir les Circuits Sahara &rarr;</a>
+            </div>
+            <div class="flex overflow-x-auto md:grid md:grid-cols-3 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
+              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1536237717235-0acadb345d8c?auto=format&fit=crop&w=1400&h=930&q=80" alt="Randonnée à dos de chameau sur les dunes du désert du Sahara" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+              </figure>
+              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1618423205267-e95744f57edf?auto=format&fit=crop&w=1400&h=930&q=80" alt="Camp de luxe niché dans les dunes de Merzouga" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+              </figure>
+              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1599859725763-4a16c9468890?auto=format&fit=crop&w=1400&h=930&q=80" alt="Un coucher de soleil dans le désert illuminant les sables dorés" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+              </figure>
+            </div>
+          </article>
+
+          <!-- Fes -->
+          <article id="fes">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-6">
+              <div>
+                <h3 class="font-display text-3xl font-bold text-gray-800">Fès</h3>
+                <p class="text-gray-600 mt-2">Remontez le temps dans la plus ancienne et la plus grande médina médiévale du monde.</p>
+              </div>
+              <a href="fes/index.html" class="mt-4 md:mt-0 text-[var(--terracotta)] font-semibold hover:text-[var(--terracotta-dark)] whitespace-nowrap">Voir les Circuits Fès &rarr;</a>
+            </div>
+            <div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-6 pb-4 justify-center">
+              <figure class="snap-center shrink-0 w-full max-w-2xl overflow-hidden rounded-xl shadow-md relative group">
+                <img src="https://images.unsplash.com/photo-1538350285410-c89dc2892b37?auto=format&fit=crop&w=2200&h=1210&q=80" alt="Ruelle historique étroite dans la médina de Fès" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">Médina de Fès El Bali</div>
+              </figure>
+            </div>
+          </article>
+
+          <!-- Essaouira -->
+          <article id="essaouira">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-6">
+              <div>
+                <h3 class="font-display text-3xl font-bold text-gray-800">Essaouira</h3>
+                <p class="text-gray-600 mt-2">Détendez-vous dans cette ville côtière venteuse, connue pour son port historique, ses fruits de mer et ses artisans du bois.</p>
+              </div>
+              <a href="essaouira/index.html" class="mt-4 md:mt-0 text-[var(--terracotta)] font-semibold hover:text-[var(--terracotta-dark)] whitespace-nowrap">Voir les Circuits Essaouira &rarr;</a>
+            </div>
+            <div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-6 pb-4 justify-center">
+              <figure class="snap-center shrink-0 w-full max-w-2xl overflow-hidden rounded-xl shadow-md relative group">
+                <img src="https://images.unsplash.com/photo-1567981964417-f4d1f7137314?auto=format&fit=crop&w=2200&h=1210&q=80" alt="Bateaux de pêche bleus dans le port historique d'Essaouira" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">Le Port d'Essaouira</div>
+              </figure>
+            </div>
+          </article>
+
+          <!-- Tangier -->
+          <article id="tangier">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-6">
+              <div>
+                <h3 class="font-display text-3xl font-bold text-gray-800">Tanger</h3>
+                <p class="text-gray-600 mt-2">Découvrez la porte de l'Afrique, là où la mer Méditerranée rencontre l'océan Atlantique.</p>
+              </div>
+              <a href="tangier/index.html" class="mt-4 md:mt-0 text-[var(--terracotta)] font-semibold hover:text-[var(--terracotta-dark)] whitespace-nowrap">Voir les Circuits Tanger &rarr;</a>
+            </div>
+            <div class="flex overflow-x-auto md:grid md:grid-cols-2 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
+              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1582919534700-acf2374f10d3?auto=format&fit=crop&w=1600&h=1030&q=80" alt="Vue aérienne au coucher du soleil sur la médina de Tanger" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+              </figure>
+              <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
+                <img src="https://images.unsplash.com/photo-1697291302946-60103b3dd3e3?auto=format&fit=crop&w=1600&h=1030&q=80" alt="Bâtiment traditionnel encadré de palmiers à Tanger" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+              </figure>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="zellige-divider"></div>
+
+    <!-- Celebrations Section -->
+    <section id="celebrations" class="py-20 bg-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <p class="font-script text-3xl text-[var(--terracotta)] mb-2">Plus qu'un circuit</p>
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6">Célébrez Votre Histoire au Maroc</h2>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              Une nuit de henné sous mille étoiles dans le Sahara. Un dîner d'anniversaire sur un toit-terrasse surplombant la Koutoubia. Une lune de miel qui commence dans la cour cachée d'un riad. Si vous célébrez un moment spécial de votre vie, nous le concevons autour de vous — le lieu, la musique, la nourriture et chaque petit détail.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              Dites-nous l'occasion et nous nous occuperons du reste, comme cela se fait toujours ici : avec chaleur, générosité et une véritable hospitalité marocaine.
+            </p>
+            <a href="#contact" class="mt-8 inline-block btn-primary text-white font-bold py-4 px-8 rounded-full transition shadow-lg">Commencer à Planifier Votre Célébration</a>
+          </div>
+          <figure class="arch-frame-lg shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1527760370098-806667fa3750?auto=format&fit=crop&w=900&q=80" alt="Une cour de riad marocain traditionnel avec fontaine, idéale pour les mariages et célébrations" class="w-full h-[420px] object-cover" loading="lazy" decoding="async">
+          </figure>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-[var(--sand)] rounded-2xl p-6 border-t-4 border-[var(--terracotta)] shadow-sm hover:shadow-lg transition">
+            <div class="text-4xl mb-3">💍</div>
+            <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Mariages & Nuits de Henné</h3>
+            <p class="text-gray-600 text-sm">Lieux en riad, musiciens traditionnels, artistes du henné, et un itinéraire d'une journée complète pour vous et vos invités.</p>
+          </div>
+          <div class="bg-[var(--sand)] rounded-2xl p-6 border-t-4 border-[var(--gold)] shadow-sm hover:shadow-lg transition">
+            <div class="text-4xl mb-3">🎂</div>
+            <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Anniversaires & Étapes de Vie</h3>
+            <p class="text-gray-600 text-sm">Dîners sur les toits, camps dans le désert, ou une expérience privée dans la médina, entièrement construite autour de l'invité d'honneur.</p>
+          </div>
+          <div class="bg-[var(--sand)] rounded-2xl p-6 border-t-4 border-[var(--teal)] shadow-sm hover:shadow-lg transition">
+            <div class="text-4xl mb-3">💐</div>
+            <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Lunes de Miel & Anniversaires de Mariage</h3>
+            <p class="text-gray-600 text-sm">Un itinéraire plus lent et plus intime à travers le Maroc — riads privés, dîners aux chandelles et coins tranquilles du désert.</p>
+          </div>
+          <div class="bg-[var(--sand)] rounded-2xl p-6 border-t-4 border-[var(--terracotta-dark)] shadow-sm hover:shadow-lg transition">
+            <div class="text-4xl mb-3">👨‍👩‍👧‍👦</div>
+            <h3 class="font-display text-xl font-bold text-gray-900 mb-2">Célébrations Familiales & de Groupe</h3>
+            <p class="text-gray-600 text-sm">Réunions de famille, voyages de retraite et escapades de groupe, avec une logistique adaptée à chaque génération.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="py-20 bg-[var(--sand)] overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center mb-14">
+          <p class="font-script text-2xl text-[var(--terracotta)] mb-1">Mots gentils</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900">Ce Que Disent Les Voyageurs</h2>
+          <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Quelques mots de voyageurs que nous avons eu le plaisir de faire découvrir le Maroc.</p>
+        </header>
+      </div>
+
+      <!-- NOTE POUR LE PROPRIÉTAIRE DU SITE : ces avis sont des exemples provisoires pour visualiser
+           la mise en page. Remplacez-les par vos vrais avis Google / TripAdvisor / Facebook
+           avant la publication. -->
+      <div class="relative w-full">
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[var(--sand)] to-transparent z-10"></div>
+        <div class="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[var(--sand)] to-transparent z-10"></div>
+
+        <div class="marquee-track">
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--terracotta)] text-white flex items-center justify-center font-bold font-display text-lg">S</div>
+              <div>
+                <p class="font-semibold text-gray-900">Sarah T.</p>
+                <p class="text-xs text-gray-500">États-Unis</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Moh a organisé tout notre voyage dans le Sahara et ce fut parfait — le camp, la randonnée à dos de chameau, le lever du soleil. Il nous a traités comme sa famille dès le premier message.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--teal)] text-white flex items-center justify-center font-bold font-display text-lg">J</div>
+              <div>
+                <p class="font-semibold text-gray-900">James & Priya K.</p>
+                <p class="text-xs text-gray-500">Royaume-Uni</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Nous nous sommes mariés dans un riad que Moh nous a trouvé à Fès. Chaque détail — musiciens, henné, fleurs — était exactement ce dont nous avions rêvé. Inoubliable.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--gold)] text-white flex items-center justify-center font-bold font-display text-lg">A</div>
+              <div>
+                <p class="font-semibold text-gray-900">Amira B.</p>
+                <p class="text-xs text-gray-500">Canada</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Chefchaouen avec Moh a été le point culminant de tout notre voyage. Il connaît chaque ruelle et chaque histoire derrière elles. Je recommande vivement pour un guide privé.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--terracotta-dark)] text-white flex items-center justify-center font-bold font-display text-lg">D</div>
+              <div>
+                <p class="font-semibold text-gray-900">La Famille Delgado</p>
+                <p class="text-xs text-gray-500">Espagne</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Voyager avec trois enfants peut être stressant, mais Moh a rendu Marrakech facile et amusant pour nous tous. Patient, drôle et sincèrement attentionné.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--teal-dark)] text-white flex items-center justify-center font-bold font-display text-lg">L</div>
+              <div>
+                <p class="font-semibold text-gray-900">Laurent M.</p>
+                <p class="text-xs text-gray-500">France</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">La médina de Fès est un labyrinthe — je m'y serais perdu en dix minutes sans Moh. Sa connaissance des tanneries et des médersas a tout rendu vivant.</p>
+          </div>
+
+          <!-- Set B (dupliqué pour une boucle continue) -->
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--terracotta)] text-white flex items-center justify-center font-bold font-display text-lg">S</div>
+              <div>
+                <p class="font-semibold text-gray-900">Sarah T.</p>
+                <p class="text-xs text-gray-500">États-Unis</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Moh a organisé tout notre voyage dans le Sahara et ce fut parfait — le camp, la randonnée à dos de chameau, le lever du soleil. Il nous a traités comme sa famille dès le premier message.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--teal)] text-white flex items-center justify-center font-bold font-display text-lg">J</div>
+              <div>
+                <p class="font-semibold text-gray-900">James & Priya K.</p>
+                <p class="text-xs text-gray-500">Royaume-Uni</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Nous nous sommes mariés dans un riad que Moh nous a trouvé à Fès. Chaque détail — musiciens, henné, fleurs — était exactement ce dont nous avions rêvé. Inoubliable.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--gold)] text-white flex items-center justify-center font-bold font-display text-lg">A</div>
+              <div>
+                <p class="font-semibold text-gray-900">Amira B.</p>
+                <p class="text-xs text-gray-500">Canada</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Chefchaouen avec Moh a été le point culminant de tout notre voyage. Il connaît chaque ruelle et chaque histoire derrière elles. Je recommande vivement pour un guide privé.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--terracotta-dark)] text-white flex items-center justify-center font-bold font-display text-lg">D</div>
+              <div>
+                <p class="font-semibold text-gray-900">La Famille Delgado</p>
+                <p class="text-xs text-gray-500">Espagne</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">Voyager avec trois enfants peut être stressant, mais Moh a rendu Marrakech facile et amusant pour nous tous. Patient, drôle et sincèrement attentionné.</p>
+          </div>
+          <div class="review-card">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-11 h-11 rounded-full bg-[var(--teal-dark)] text-white flex items-center justify-center font-bold font-display text-lg">L</div>
+              <div>
+                <p class="font-semibold text-gray-900">Laurent M.</p>
+                <p class="text-xs text-gray-500">France</p>
+              </div>
+            </div>
+            <p class="text-[var(--gold)] mb-2 tracking-wide">★★★★★</p>
+            <p class="text-gray-600 text-sm leading-relaxed">La médina de Fès est un labyrinthe — je m'y serais perdu en dix minutes sans Moh. Sa connaissance des tanneries et des médersas a tout rendu vivant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moroccan-Styled Contact Section -->
+    <section id="contact" class="tile-pattern py-20 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+        <div class="text-center mb-14">
+          <p class="font-script text-3xl text-[var(--gold)] mb-1">مرحبا · Marhaba</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-white">Planifions Votre Voyage Marocain</h2>
+          <p class="mt-4 text-lg text-white/80">Indiquez-nous vos dates, votre rêve et vos accompagnants — nous répondons généralement en quelques heures, jour et nuit.</p>
+        </div>
+
+        <div class="bg-[var(--sand)] rounded-[2rem] shadow-2xl overflow-hidden border border-[var(--gold)]/40">
+          <div class="grid grid-cols-1 lg:grid-cols-5">
+
+            <!-- Contact Info Panel -->
+            <div class="lg:col-span-2 bg-[var(--teal-dark)] text-white p-8 md:p-10 relative">
+              <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image:radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 1px); background-size:22px 22px;"></div>
+              <div class="relative">
+                <h3 class="font-display text-2xl font-bold mb-1">Contactez Moh Directement</h3>
+                <p class="text-white/70 mb-8 text-sm">Pas de centre d'appel, pas d'intermédiaire — juste votre guide.</p>
+
+                <div class="space-y-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="w-11 h-11 rounded-full bg-[var(--terracotta)] flex items-center justify-center text-lg shrink-0">✉</div>
+                    <div>
+                      <h4 class="font-semibold text-white">Email</h4>
+                      <a href="mailto:tourmoroccowithmoh@gmail.com" class="text-white/75 hover:text-[var(--gold)] transition text-sm break-all">tourmoroccowithmoh@gmail.com</a>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div class="w-11 h-11 rounded-full bg-[var(--terracotta)] flex items-center justify-center text-lg shrink-0">☏</div>
+                    <div>
+                      <h4 class="font-semibold text-white">Appeler</h4>
+                      <p class="text-white/75 text-sm"><a href="tel:+12027054110" class="hover:text-[var(--gold)] transition">US : (202) 705-4110</a></p>
+                      <p class="text-white/75 text-sm"><a href="tel:+212635220678" class="hover:text-[var(--gold)] transition">MA : (212) 635-220678</a></p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div class="w-11 h-11 rounded-full bg-[var(--terracotta)] flex items-center justify-center text-lg shrink-0">💬</div>
+                    <div>
+                      <h4 class="font-semibold text-white">WhatsApp — réponse la plus rapide</h4>
+                      <p><a href="https://wa.me/12027054110" target="_blank" rel="noopener noreferrer" class="text-white/75 hover:text-[var(--gold)] transition text-sm">Ligne US</a></p>
+                      <p><a href="https://wa.me/212635220678" target="_blank" rel="noopener noreferrer" class="text-white/75 hover:text-[var(--gold)] transition text-sm">Ligne MA</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="https://wa.me/212635220678?text=Bonjour%20Moh%2C%20je%20voudrais%20organiser%20un%20voyage%20au%20Maroc." target="_blank" rel="noopener noreferrer" class="mt-10 w-full inline-flex justify-center items-center gap-2 bg-[#25D366] hover:brightness-95 text-white font-bold py-3.5 px-6 rounded-full transition shadow-md">
+                  💬 Discuter sur WhatsApp Maintenant
+                </a>
+              </div>
+            </div>
+
+            <!-- Form Panel -->
+            <div class="lg:col-span-3 p-8 md:p-10">
+              <form id="contactForm" action="https://formspree.io/f/xnpadewa" method="POST" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Prénom</label>
+                    <input type="text" name="name" id="name" required class="w-full rounded-lg border border-gray-300 px-4 py-3 ring-focus transition" placeholder="Jeanne">
+                  </div>
+                  <div>
+                    <label for="surname" class="block text-sm font-semibold text-gray-700 mb-2">Nom</label>
+                    <input type="text" name="surname" id="surname" required class="w-full rounded-lg border border-gray-300 px-4 py-3 ring-focus transition" placeholder="Dupont">
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Adresse Email</label>
+                    <input type="email" name="email" id="email" required class="w-full rounded-lg border border-gray-300 px-4 py-3 ring-focus transition" placeholder="jeanne@exemple.com">
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Numéro de Téléphone</label>
+                    <input type="tel" name="phone" id="phone" class="w-full rounded-lg border border-gray-300 px-4 py-3 ring-focus transition" placeholder="+33 6 00 00 00 00">
+                  </div>
+                </div>
+                <div>
+                  <label for="subject" class="block text-sm font-semibold text-gray-700 mb-2">Que planifions-nous ?</label>
+                  <select name="subject" id="subject" required class="w-full rounded-lg border border-gray-300 px-4 py-3 ring-focus transition bg-white">
+                    <option value="">Sélectionnez une option…</option>
+                    <option>Circuit Privé en Ville</option>
+                    <option>Itinéraire Multi-Villes</option>
+                    <option>Circuit dans le Désert du Sahara</option>
+                    <option>Mariage / Nuit de Henné</option>
+                    <option>Célébration d'Anniversaire</option>
+                    <option>Lune de Miel / Anniversaire de Mariage</option>
+                    <option>Voyage en Famille ou en Groupe</option>
+                    <option>Autre Chose</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Votre Message</label>
+                  <textarea name="message" id="message" rows="4" required class="w-full rounded-lg border border-gray-300 px-4 py-3 ring-focus transition" placeholder="Parlez-nous de vos dates de voyage idéales, de la taille de votre groupe et des lieux incontournables — ou de la célébration dont vous rêvez..."></textarea>
+                </div>
+                <button type="submit" class="w-full btn-primary text-white font-bold py-4 px-6 rounded-lg transition duration-300 shadow-md">
+                  Envoyer la Demande
+                </button>
+                <p class="text-center text-xs text-gray-400">Nous répondons généralement sous 48 heures — souvent beaucoup plus vite sur WhatsApp.</p>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-gray-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+      <div class="flex justify-center md:justify-start">
+        <img src="../wp-content/logo.png" alt="Logo Tour Morocco" class="h-16 object-contain" loading="lazy" />
+      </div>
+      <div class="text-sm">
+        &copy; 2026 - Tour Morocco with Moh. Tous droits réservés.
+        <p class="text-xs text-gray-600 mt-1">Photographie des destinations via Unsplash.</p>
+      </div>
+      <div class="flex justify-center md:justify-end space-x-6">
+        <a href="https://www.instagram.com/tourmoroccowithmoh/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-white transition">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/212635220678?text=Bonjour%20Moh%2C%20je%20voudrais%20organiser%20un%20voyage%20au%20Maroc." target="_blank" rel="noopener noreferrer"
+     aria-label="Discuter avec Moh sur WhatsApp"
+     class="whatsapp-float hidden sm:inline-flex items-center gap-2 rounded-full py-3.5 px-5 font-bold">
+    💬 Discuter avec Moh
+  </a>
+  <a href="https://wa.me/212635220678?text=Bonjour%20Moh%2C%20je%20voudrais%20organiser%20un%20voyage%20au%20Maroc." target="_blank" rel="noopener noreferrer"
+     aria-label="Discuter avec Moh sur WhatsApp"
+     class="whatsapp-float sm:hidden flex items-center justify-center w-14 h-14 rounded-full text-2xl">
+    💬
+  </a>
+
+  <script>
+    // Pré-sélectionne le menu "sujet" en arrivant depuis un bouton de la section Célébrations.
+    document.querySelectorAll('#celebrations a[href="#contact"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var subject = document.getElementById('subject');
+        if (subject) { subject.value = 'Mariage / Nuit de Henné'; }
+      });
+    });
+  </script>
+
+</body>
+</html>

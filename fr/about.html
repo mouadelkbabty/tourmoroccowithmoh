@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="fr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>About Moh & Lee | Tour Morocco with Moh</title>
-  <meta name="title" content="About Moh & Lee | Tour Morocco with Moh" />
-  <meta name="description" content="Meet Moh, a licensed Marrakech-born tour guide, and his wife Lee, an artist and graphic designer. Together they founded Tour Morocco with Moh to share authentic Moroccan travel and celebrations." />
+  <title>À Propos de Moh & Lee | Tour Morocco with Moh</title>
+  <meta name="title" content="À Propos de Moh & Lee | Tour Morocco with Moh" />
+  <meta name="description" content="Rencontrez Moh, guide touristique agréé né à Marrakech, et sa femme Lee, artiste et graphiste. Ensemble, ils ont fondé Tour Morocco with Moh pour partager des voyages et célébrations authentiques au Maroc." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <link rel="canonical" href="https://tourmoroccowithmoh.com/about.html" />
-  <link rel="icon" type="image/png" href="wp-content/logo.png" />
-  <link rel="apple-touch-icon" href="wp-content/logo.png" />
+  <link rel="canonical" href="https://tourmoroccowithmoh.com/fr/about.html" />
+  <link rel="icon" type="image/png" href="../wp-content/logo.png" />
+  <link rel="apple-touch-icon" href="../wp-content/logo.png" />
 
   <link rel="alternate" hreflang="en" href="https://tourmoroccowithmoh.com/about.html" />
   <link rel="alternate" hreflang="fr" href="https://tourmoroccowithmoh.com/fr/about.html" />
   <link rel="alternate" hreflang="x-default" href="https://tourmoroccowithmoh.com/about.html" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tourmoroccowithmoh.com/about.html" />
-  <meta property="og:title" content="About Moh & Lee | Tour Morocco with Moh" />
-  <meta property="og:description" content="Meet the husband-and-wife team behind Tour Morocco with Moh." />
+  <meta property="og:url" content="https://tourmoroccowithmoh.com/fr/about.html" />
+  <meta property="og:title" content="À Propos de Moh & Lee | Tour Morocco with Moh" />
+  <meta property="og:description" content="Rencontrez le couple derrière Tour Morocco with Moh." />
   <meta property="og:image" content="https://tourmoroccowithmoh.com/images/couple-og.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
 
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="About Moh & Lee | Tour Morocco with Moh" />
-  <meta property="twitter:description" content="Meet the husband-and-wife team behind Tour Morocco with Moh." />
+  <meta property="twitter:title" content="À Propos de Moh & Lee | Tour Morocco with Moh" />
+  <meta property="twitter:description" content="Rencontrez le couple derrière Tour Morocco with Moh." />
   <meta property="twitter:image" content="https://tourmoroccowithmoh.com/images/couple-og.jpg" />
 
   <!-- Tailwind CSS -->
@@ -78,29 +79,9 @@
     .btn-primary{ background-color: var(--terracotta); }
     .btn-primary:hover{ background-color: var(--terracotta-dark); }
 
-    /* Cinematic hero movement */
-    .hero-kenburns{
-      animation: kenburns 24s ease-in-out infinite alternate;
-    }
-    @keyframes kenburns{
-      from{ transform: scale(1); }
-      to{ transform: scale(1.12); }
-    }
-
-    /* Gentle floating gallery photos */
-    .photo-float{
-      animation: photoFloat 6s ease-in-out infinite;
-    }
-    .photo-float:nth-child(2n){ animation-delay: -2s; }
-    .photo-float:nth-child(3n){ animation-delay: -4s; }
-    @keyframes photoFloat{
-      0%, 100%{ transform: translateY(0); }
-      50%{ transform: translateY(-10px); }
-    }
-
-    @media (prefers-reduced-motion: reduce){
-      .hero-kenburns, .photo-float{ animation: none; }
-    }
+    .hero-kenburns{ animation: kenburns 24s ease-in-out infinite alternate; }
+    @keyframes kenburns{ from{ transform: scale(1); } to{ transform: scale(1.12); } }
+    @media (prefers-reduced-motion: reduce){ .hero-kenburns{ animation: none; } }
 
     .whatsapp-float{
       position: fixed;
@@ -119,11 +100,11 @@
 
   <!-- Quick Contact Bar -->
   <div class="bg-[var(--teal-dark)] text-white text-xs md:text-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap justify-center gap-x-6 gap-y-1">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap justify-center items-center gap-x-6 gap-y-1">
       <a href="tel:+212635220678" class="hover:text-[var(--gold)] transition">☏ +212 635-220678</a>
       <a href="https://wa.me/212635220678" target="_blank" rel="noopener noreferrer" class="hover:text-[var(--gold)] transition">💬 WhatsApp Moh</a>
       <a href="mailto:tourmoroccowithmoh@gmail.com" class="hover:text-[var(--gold)] transition">✉ tourmoroccowithmoh@gmail.com</a>
-      <a href="fr/about.html" class="hover:text-[var(--gold)] transition font-semibold border-l border-white/30 pl-6">FR 🇫🇷</a>
+      <a href="../about.html" class="hover:text-[var(--gold)] transition font-semibold border-l border-white/30 pl-6">EN 🇬🇧</a>
     </div>
   </div>
 
@@ -131,23 +112,23 @@
   <header class="bg-[var(--sand)]/95 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-[var(--gold)]/30">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-center py-4 md:py-6">
-        <a href="index.html" aria-label="Home">
+        <a href="index.html" aria-label="Accueil">
           <img
-            src="wp-content/logo.png"
-            alt="Tour Morocco with Moh Official Logo"
+            src="../wp-content/logo.png"
+            alt="Tour Morocco with Moh Logo Officiel"
             class="h-20 md:h-28 object-contain"
           />
         </a>
       </div>
       <nav class="flex justify-center pb-4 overflow-x-auto no-scrollbar">
         <ul class="flex space-x-6 md:space-x-10 text-sm md:text-base font-semibold text-[var(--ink)]/80 uppercase tracking-wide whitespace-nowrap px-4">
-          <li><a href="index.html" class="hover:text-[var(--terracotta)] transition">Home</a></li>
-          <li><a href="about.html" class="text-[var(--terracotta)] transition">About Us</a></li>
+          <li><a href="index.html" class="hover:text-[var(--terracotta)] transition">Accueil</a></li>
+          <li><a href="about.html" class="text-[var(--terracotta)] transition">À Propos</a></li>
           <li><a href="index.html#destinations" class="hover:text-[var(--terracotta)] transition">Destinations</a></li>
-          <li><a href="index.html#celebrations" class="hover:text-[var(--terracotta)] transition">Celebrations</a></li>
-          <li><a href="tours/index.html" class="hover:text-[var(--terracotta)] transition">Tours</a></li>
+          <li><a href="index.html#celebrations" class="hover:text-[var(--terracotta)] transition">Célébrations</a></li>
+          <li><a href="tours/index.html" class="hover:text-[var(--terracotta)] transition">Circuits</a></li>
           <li><a href="blog/index.html" class="hover:text-[var(--terracotta)] transition">Blog</a></li>
-          <li><a href="index.html#contact" class="hover:text-[var(--terracotta)] transition">Contact Us</a></li>
+          <li><a href="index.html#contact" class="hover:text-[var(--terracotta)] transition">Contactez-Nous</a></li>
         </ul>
       </nav>
     </div>
@@ -158,11 +139,11 @@
     <!-- Hero -->
     <section class="relative h-[46vh] min-h-[340px] flex items-center justify-center text-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="images/couple.webp" alt="Moh and his wife Lee smiling together in a tiled Fes riad" class="w-full h-full object-cover object-top hero-kenburns" loading="eager" fetchpriority="high" />
+        <img src="../images/couple.webp" alt="Moh et sa femme Lee souriant ensemble dans un riad carrelé à Fès" class="w-full h-full object-cover object-top hero-kenburns" loading="eager" fetchpriority="high" />
         <div class="absolute inset-0 bg-black/45"></div>
       </div>
       <div class="relative z-10 max-w-3xl mx-auto px-4 text-white">
-        <p class="font-script text-2xl md:text-3xl text-[var(--gold)] mb-2">Meet your hosts</p>
+        <p class="font-script text-2xl md:text-3xl text-[var(--gold)] mb-2">Rencontrez vos hôtes</p>
         <h1 class="font-display text-5xl md:text-6xl font-bold text-white drop-shadow-lg">Moh & Lee</h1>
       </div>
     </section>
@@ -174,33 +155,33 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
 
         <figure class="lg:col-span-2 arch-frame-lg shadow-2xl">
-          <img src="images/moh.webp" alt="Moh, licensed Marrakech tour guide and founder of Tour Morocco with Moh" class="w-full h-[480px] object-cover" loading="lazy" decoding="async">
+          <img src="../images/moh.webp" alt="Moh, guide touristique agréé à Marrakech et fondateur de Tour Morocco with Moh" class="w-full h-[480px] object-cover" loading="lazy" decoding="async">
         </figure>
 
         <div class="lg:col-span-3">
-          <p class="font-script text-2xl text-[var(--terracotta)] mb-1">About Us</p>
-          <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6">Welcome to Our Morocco</h2>
+          <p class="font-script text-2xl text-[var(--terracotta)] mb-1">À Propos de Nous</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6">Bienvenue Dans Notre Maroc</h2>
 
           <p class="text-gray-600 leading-relaxed text-lg mb-5">
-            Welcome to our site, Tour Morocco with Moh. I was born and raised in Marrakech, and have been a licensed tour guide for many years now. I speak English, French, Spanish, and of course, Darija, the language of Moroccans.
+            Bienvenue sur notre site, Tour Morocco with Moh. Je suis né et j'ai grandi à Marrakech, et je suis guide touristique agréé depuis de nombreuses années. Je parle anglais, français, espagnol, et bien sûr le darija, la langue des Marocains.
           </p>
           <p class="text-gray-600 leading-relaxed text-lg mb-5">
-            I formed Tour Morocco with Moh with my wife, Lee, who is a graphic designer and artist. When I'm not guiding tours, or sourcing beautiful Moroccan products, we enjoy touring all over Morocco, and in other parts of the world.
+            J'ai créé Tour Morocco with Moh avec ma femme, Lee, qui est graphiste et artiste. Quand je ne guide pas de circuits, ou que je ne recherche pas de beaux produits marocains, nous aimons parcourir le Maroc, et d'autres parties du monde.
           </p>
           <p class="text-gray-600 leading-relaxed text-lg mb-5">
-            I love what I do, and I love meeting new people and showing them my beautiful country.
+            J'aime ce que je fais, et j'aime rencontrer de nouvelles personnes et leur faire découvrir mon magnifique pays.
           </p>
 
           <div class="bg-[var(--sand)] border-l-4 border-[var(--terracotta)] rounded-r-xl p-6 mt-8">
             <p class="text-gray-700 leading-relaxed text-lg">
-              Let me know if you're planning a special event. I can organize and plan your birthday party, wedding, or any other special event you may want to have while you're in Morocco. You will enjoy the occasion even more by letting me take care of the details.
+              Faites-moi savoir si vous planifiez un événement spécial. Je peux organiser et planifier votre fête d'anniversaire, votre mariage, ou tout autre événement spécial que vous souhaitez avoir pendant votre séjour au Maroc. Vous profiterez encore plus de l'occasion en me laissant m'occuper des détails.
             </p>
           </div>
 
           <div class="mt-10 flex flex-col sm:flex-row gap-4">
-            <a href="index.html#contact" class="btn-primary text-white font-bold py-4 px-8 rounded-full transition shadow-lg text-center">Plan a Trip With Us</a>
-            <a href="https://wa.me/212635220678?text=Hi%20Moh%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Morocco." target="_blank" rel="noopener noreferrer" class="bg-[#25D366] hover:brightness-95 text-white font-bold py-4 px-8 rounded-full transition shadow-lg text-center inline-flex items-center justify-center gap-2">
-              💬 Chat on WhatsApp
+            <a href="index.html#contact" class="btn-primary text-white font-bold py-4 px-8 rounded-full transition shadow-lg text-center">Planifier un Voyage Avec Nous</a>
+            <a href="https://wa.me/212635220678?text=Bonjour%20Moh%2C%20je%20voudrais%20organiser%20un%20voyage%20au%20Maroc." target="_blank" rel="noopener noreferrer" class="bg-[#25D366] hover:brightness-95 text-white font-bold py-4 px-8 rounded-full transition shadow-lg text-center inline-flex items-center justify-center gap-2">
+              💬 Discuter sur WhatsApp
             </a>
           </div>
         </div>
@@ -212,19 +193,19 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
         <div>
           <p class="font-display text-4xl font-bold text-[var(--gold)]">4</p>
-          <p class="text-sm text-white/80 mt-1">Languages spoken<br>English · French · Spanish · Darija</p>
+          <p class="text-sm text-white/80 mt-1">Langues parlées<br>Anglais · Français · Espagnol · Darija</p>
         </div>
         <div>
           <p class="font-display text-4xl font-bold text-[var(--gold)]">2</p>
-          <p class="text-sm text-white/80 mt-1">Founders<br>Moh & Lee</p>
+          <p class="text-sm text-white/80 mt-1">Fondateurs<br>Moh & Lee</p>
         </div>
         <div>
           <p class="font-display text-4xl font-bold text-[var(--gold)]">✓</p>
-          <p class="text-sm text-white/80 mt-1">Licensed<br>professional guide</p>
+          <p class="text-sm text-white/80 mt-1">Guide<br>professionnel agréé</p>
         </div>
         <div>
           <p class="font-display text-4xl font-bold text-[var(--gold)]">100%</p>
-          <p class="text-sm text-white/80 mt-1">Private, personalized<br>itineraries</p>
+          <p class="text-sm text-white/80 mt-1">Itinéraires privés<br>et personnalisés</p>
         </div>
       </div>
     </section>
@@ -235,10 +216,10 @@
   <footer class="bg-slate-900 text-gray-400 py-12 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
       <div class="flex justify-center md:justify-start">
-        <img src="wp-content/logo.png" alt="Tour Morocco Logo" class="h-16 object-contain" loading="lazy" />
+        <img src="../wp-content/logo.png" alt="Logo Tour Morocco" class="h-16 object-contain" loading="lazy" />
       </div>
       <div class="text-sm">
-        &copy; 2026 - Tour Morocco with Moh. All Rights Reserved.
+        &copy; 2026 - Tour Morocco with Moh. Tous droits réservés.
       </div>
       <div class="flex justify-center md:justify-end space-x-6">
         <a href="https://www.instagram.com/tourmoroccowithmoh/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-white transition">Instagram</a>
@@ -247,13 +228,13 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/212635220678?text=Hi%20Moh%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Morocco." target="_blank" rel="noopener noreferrer"
-     aria-label="Chat with Moh on WhatsApp"
+  <a href="https://wa.me/212635220678?text=Bonjour%20Moh%2C%20je%20voudrais%20organiser%20un%20voyage%20au%20Maroc." target="_blank" rel="noopener noreferrer"
+     aria-label="Discuter avec Moh sur WhatsApp"
      class="whatsapp-float hidden sm:inline-flex items-center gap-2 rounded-full py-3.5 px-5 font-bold">
-    💬 Chat with Moh
+    💬 Discuter avec Moh
   </a>
-  <a href="https://wa.me/212635220678?text=Hi%20Moh%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Morocco." target="_blank" rel="noopener noreferrer"
-     aria-label="Chat with Moh on WhatsApp"
+  <a href="https://wa.me/212635220678?text=Bonjour%20Moh%2C%20je%20voudrais%20organiser%20un%20voyage%20au%20Maroc." target="_blank" rel="noopener noreferrer"
+     aria-label="Discuter avec Moh sur WhatsApp"
      class="whatsapp-float sm:hidden flex items-center justify-center w-14 h-14 rounded-full text-2xl">
     💬
   </a>

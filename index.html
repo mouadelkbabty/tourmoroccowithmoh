@@ -19,14 +19,14 @@
   <meta property="og:url" content="https://tourmoroccowithmoh.com/" />
   <meta property="og:title" content="Tour Morocco with Moh | Private Moroccan Tour Guide" />
   <meta property="og:description" content="Experience the authentic history, culture, and people of Morocco. Book personalized, professional guided tours to Marrakech, Casablanca, Chefchaouen, the Sahara, and beyond." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=2400&q=80" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://tourmoroccowithmoh.com/" />
   <meta property="twitter:title" content="Tour Morocco with Moh | Private Moroccan Tour Guide" />
   <meta property="twitter:description" content="Experience the authentic history, culture, and people of Morocco. Book personalized, professional guided tours." />
-  <meta property="twitter:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=2400&q=80" />
 
   <!-- Schema.org Structured Data for Local Tour Guide Business -->
   <script type="application/ld+json">
@@ -156,6 +156,30 @@
     }
 
     /* Floating WhatsApp button */
+    /* Cinematic hero movement */
+    .hero-kenburns{
+      animation: kenburns 24s ease-in-out infinite alternate;
+    }
+    @keyframes kenburns{
+      from{ transform: scale(1); }
+      to{ transform: scale(1.12); }
+    }
+
+    /* Gentle floating gallery photos */
+    .photo-float{
+      animation: photoFloat 6s ease-in-out infinite;
+    }
+    .photo-float:nth-child(2n){ animation-delay: -2s; }
+    .photo-float:nth-child(3n){ animation-delay: -4s; }
+    @keyframes photoFloat{
+      0%, 100%{ transform: translateY(0); }
+      50%{ transform: translateY(-10px); }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .hero-kenburns, .photo-float{ animation: none; }
+    }
+
     .whatsapp-float{
       position: fixed;
       bottom: 22px;
@@ -207,9 +231,9 @@
 
   <!-- Hero Section -->
   <main class="flex-grow">
-    <section class="relative h-[70vh] min-h-[520px] flex items-center justify-center text-center">
+    <section class="relative h-[70vh] min-h-[520px] flex items-center justify-center text-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1920&q=80" alt="Beautiful Moroccan Architecture and Lanterns" class="w-full h-full object-cover" loading="eager" fetchpriority="high" />
+        <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=3840&q=80" alt="Beautiful Moroccan Architecture and Lanterns" class="w-full h-full object-cover hero-kenburns" loading="eager" fetchpriority="high" />
         <div class="absolute inset-0 bg-black/45"></div>
       </div>
       <div class="relative z-10 max-w-4xl mx-auto px-4 text-white">
@@ -275,11 +299,11 @@
             </div>
             <div class="flex overflow-x-auto md:grid md:grid-cols-2 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md relative group">
-                <img src="https://images.unsplash.com/photo-1544517333-3ceafba4d01b?auto=format&fit=crop&w=700&h=450&q=80" alt="The iconic Koutoubia Mosque minaret in Marrakech" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1544517333-3ceafba4d01b?auto=format&fit=crop&w=1600&h=1030&q=80" alt="The iconic Koutoubia Mosque minaret in Marrakech" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
                 <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">Koutoubia Mosque</div>
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md relative group">
-                <img src="https://images.unsplash.com/photo-1653323792487-6ecc6217040b?auto=format&fit=crop&w=700&h=450&q=80" alt="Horse-drawn carriage passing the Koutoubia Mosque in Marrakech" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1653323792487-6ecc6217040b?auto=format&fit=crop&w=1600&h=1030&q=80" alt="Horse-drawn carriage passing the Koutoubia Mosque in Marrakech" class="w-full h-64 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
                 <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">Medina Streets</div>
               </figure>
             </div>
@@ -296,7 +320,7 @@
             </div>
             <div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-6 pb-4 justify-center">
               <figure class="snap-center shrink-0 w-full max-w-2xl overflow-hidden rounded-xl shadow-md relative group">
-                <img src="https://images.unsplash.com/photo-1753219882136-059d4962607e?auto=format&fit=crop&w=1000&h=550&q=80" alt="Hassan II Grand Mosque overlooking the Atlantic Ocean in Casablanca" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1753219882136-059d4962607e?auto=format&fit=crop&w=2200&h=1210&q=80" alt="Hassan II Grand Mosque overlooking the Atlantic Ocean in Casablanca" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
                 <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">Grand Hassan II Mosque</div>
               </figure>
             </div>
@@ -313,10 +337,10 @@
             </div>
             <div class="flex overflow-x-auto md:grid md:grid-cols-2 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1751811106851-4a77d1890c55?auto=format&fit=crop&w=700&h=450&q=80" alt="A narrow blue-painted street in the Chefchaouen medina" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1751811106851-4a77d1890c55?auto=format&fit=crop&w=1600&h=1030&q=80" alt="A narrow blue-painted street in the Chefchaouen medina" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1730581822492-8a55ce0b7fde?auto=format&fit=crop&w=700&h=450&q=80" alt="A blue alleyway with oranges hanging above it in Chefchaouen" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1730581822492-8a55ce0b7fde?auto=format&fit=crop&w=1600&h=1030&q=80" alt="A blue alleyway with oranges hanging above it in Chefchaouen" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>
@@ -332,13 +356,13 @@
             </div>
             <div class="flex overflow-x-auto md:grid md:grid-cols-3 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1536237717235-0acadb345d8c?auto=format&fit=crop&w=600&h=400&q=80" alt="Camel trekking over the sand dunes in the Sahara desert" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1536237717235-0acadb345d8c?auto=format&fit=crop&w=1400&h=930&q=80" alt="Camel trekking over the sand dunes in the Sahara desert" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1618423205267-e95744f57edf?auto=format&fit=crop&w=600&h=400&q=80" alt="Luxury desert camp tents nestled in the Merzouga dunes" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1618423205267-e95744f57edf?auto=format&fit=crop&w=1400&h=930&q=80" alt="Luxury desert camp tents nestled in the Merzouga dunes" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1599859725763-4a16c9468890?auto=format&fit=crop&w=600&h=400&q=80" alt="A sunset in the desert lighting up the golden sands" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1599859725763-4a16c9468890?auto=format&fit=crop&w=1400&h=930&q=80" alt="A sunset in the desert lighting up the golden sands" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>
@@ -354,7 +378,7 @@
             </div>
             <div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-6 pb-4 justify-center">
               <figure class="snap-center shrink-0 w-full max-w-2xl overflow-hidden rounded-xl shadow-md relative group">
-                <img src="https://images.unsplash.com/photo-1538350285410-c89dc2892b37?auto=format&fit=crop&w=1000&h=550&q=80" alt="Narrow historic alley in the medina of Fes" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1538350285410-c89dc2892b37?auto=format&fit=crop&w=2200&h=1210&q=80" alt="Narrow historic alley in the medina of Fes" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
                 <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">Fes El Bali Medina</div>
               </figure>
             </div>
@@ -371,7 +395,7 @@
             </div>
             <div class="flex overflow-x-auto no-scrollbar snap-x snap-mandatory gap-6 pb-4 justify-center">
               <figure class="snap-center shrink-0 w-full max-w-2xl overflow-hidden rounded-xl shadow-md relative group">
-                <img src="https://images.unsplash.com/photo-1567981964417-f4d1f7137314?auto=format&fit=crop&w=1000&h=550&q=80" alt="Blue fishing boats in the historic port of Essaouira" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1567981964417-f4d1f7137314?auto=format&fit=crop&w=2200&h=1210&q=80" alt="Blue fishing boats in the historic port of Essaouira" class="w-full h-72 object-cover transition duration-300 group-hover:scale-110" loading="lazy" decoding="async">
                 <div class="absolute bottom-0 left-0 bg-black/60 text-white text-sm px-3 py-1 m-2 rounded">The Port of Essaouira</div>
               </figure>
             </div>
@@ -388,10 +412,10 @@
             </div>
             <div class="flex overflow-x-auto md:grid md:grid-cols-2 snap-x snap-mandatory gap-6 pb-4 no-scrollbar">
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1582919534700-acf2374f10d3?auto=format&fit=crop&w=700&h=450&q=80" alt="Aerial sunset view over the medina of Tangier" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1582919534700-acf2374f10d3?auto=format&fit=crop&w=1600&h=1030&q=80" alt="Aerial sunset view over the medina of Tangier" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
               <figure class="snap-center shrink-0 w-80 md:w-full overflow-hidden rounded-xl shadow-md">
-                <img src="https://images.unsplash.com/photo-1697291302946-60103b3dd3e3?auto=format&fit=crop&w=700&h=450&q=80" alt="Traditional building framed by palm trees in Tangier" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
+                <img src="https://images.unsplash.com/photo-1697291302946-60103b3dd3e3?auto=format&fit=crop&w=1600&h=1030&q=80" alt="Traditional building framed by palm trees in Tangier" class="w-full h-64 object-cover transition duration-300 hover:scale-110" loading="lazy" decoding="async">
               </figure>
             </div>
           </article>
@@ -692,7 +716,7 @@
   <footer class="bg-slate-900 text-gray-400 py-12 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
       <div class="flex justify-center md:justify-start">
-        <img src="wp-content/logo.png" alt="Tour Morocco Logo" class="h-16 object-contain opacity-80" loading="lazy" />
+        <img src="wp-content/logo.png" alt="Tour Morocco Logo" class="h-16 object-contain brightness-0 invert opacity-90" loading="lazy" />
       </div>
       <div class="text-sm">
         &copy; 2026 - Tour Morocco with Moh. All Rights Reserved.

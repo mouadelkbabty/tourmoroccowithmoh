@@ -681,7 +681,9 @@
 
             <!-- Form Panel -->
             <div class="lg:col-span-3 p-8 md:p-10">
-              <form id="contactForm" action="https://formspree.io/f/xnpadewa" method="POST" class="space-y-6">
+              <form id="contactForm" class="space-y-6">
+                <input type="hidden" name="access_key" value="8f23ebb6-1359-4cdb-87cc-66e280f963e3">
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
@@ -724,6 +726,7 @@
                   Send Inquiry
                 </button>
                 <p class="text-center text-xs text-gray-400">We typically respond within 48 hours — often much sooner over WhatsApp.</p>
+                <p id="formStatus" class="text-center text-sm mt-2 hidden" role="status" aria-live="polite"></p>
               </form>
             </div>
 
@@ -769,6 +772,47 @@
         if (subject) { subject.value = 'Wedding / Henna Night'; }
       });
     });
+
+    // Submit the contact form via Web3Forms without leaving the page.
+    (function () {
+      var form = document.getElementById('contactForm');
+      var statusEl = document.getElementById('formStatus');
+      if (!form || !statusEl) return;
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalBtnText = submitBtn.textContent;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+        statusEl.className = 'text-center text-sm mt-2 hidden';
+
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { Accept: 'application/json' },
+          body: new FormData(form)
+        })
+          .then(function (response) { return response.json(); })
+          .then(function (data) {
+            if (data.success) {
+              statusEl.textContent = "Thank you! Your message has been sent — we'll get back to you within 48 hours.";
+              statusEl.className = 'text-center text-sm mt-2 text-green-600 font-semibold';
+              form.reset();
+            } else {
+              throw new Error(data.message || 'Submission failed');
+            }
+          })
+          .catch(function () {
+            statusEl.textContent = 'Something went wrong sending your message. Please try again, or message us directly on WhatsApp.';
+            statusEl.className = 'text-center text-sm mt-2 text-red-600 font-semibold';
+          })
+          .finally(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalBtnText;
+            statusEl.classList.remove('hidden');
+          });
+      });
+    })();
   </script>
 
 </body>

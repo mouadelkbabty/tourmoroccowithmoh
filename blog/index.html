@@ -87,6 +87,7 @@
   </style>
 </head>
 <body class="text-[var(--ink)] antialiased flex flex-col min-h-screen">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[9999] focus:bg-white focus:text-black focus:px-4 focus:py-2 focus:rounded focus:shadow-lg">Skip to content</a>
 
   <div class="bg-[var(--teal-dark)] text-white text-xs md:text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap justify-center gap-x-6 gap-y-1">
@@ -118,7 +119,7 @@
     </div>
   </header>
 
-  <main class="flex-grow">
+  <main id="main-content" class="flex-grow">
 
     <section class="relative h-[38vh] min-h-[280px] flex items-center justify-center text-center overflow-hidden">
       <div class="absolute inset-0 z-0">

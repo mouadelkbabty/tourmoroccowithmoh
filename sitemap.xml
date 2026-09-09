@@ -13,6 +13,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tourmoroccowithmoh.com/faq.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tourmoroccowithmoh.com/terms.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://tourmoroccowithmoh.com/tours/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -103,6 +115,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tourmoroccowithmoh.com/fr/faq.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tourmoroccowithmoh.com/fr/terms.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://tourmoroccowithmoh.com/fr/tours/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -191,6 +215,18 @@
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tourmoroccowithmoh.com/es/faq.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tourmoroccowithmoh.com/es/terms.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://tourmoroccowithmoh.com/es/tours/</loc>

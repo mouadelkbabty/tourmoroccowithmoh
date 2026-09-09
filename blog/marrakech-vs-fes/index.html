@@ -227,5 +227,44 @@
     💬
   </a>
 
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-[110] bg-slate-900 text-white p-4 md:p-5" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center gap-4 text-sm">
+      <p class="flex-1 text-center sm:text-left text-white/85">We use cookies to understand how visitors use this site (Google Analytics). You can accept or decline. See our <a href="../../terms.html#cookies" class="underline hover:text-white">Privacy Policy</a>.</p>
+      <div class="flex gap-3 shrink-0">
+        <button type="button" id="cookie-decline" class="px-4 py-2 rounded-full border border-white/30 hover:bg-white/10 transition">Decline</button>
+        <button type="button" id="cookie-accept" class="px-4 py-2 rounded-full bg-[var(--terracotta)] hover:bg-[var(--terracotta-dark)] transition font-semibold">Accept</button>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var KEY='tmwm-cookie-consent', GA_ID='G-5XKWG25PRX';
+    function loadGA(){
+      if(window.__gaLoaded) return; window.__gaLoaded=true;
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag=gtag;
+      gtag('js', new Date());
+      gtag('config', GA_ID, {anonymize_ip:true});
+    }
+    var consent = localStorage.getItem(KEY);
+    if(consent==='accepted'){ loadGA(); }
+    else if(consent!=='declined'){
+      document.addEventListener('DOMContentLoaded', function(){
+        var b=document.getElementById('cookie-banner'); if(b) b.hidden=false;
+      });
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+      var a=document.getElementById('cookie-accept'), d=document.getElementById('cookie-decline'), b=document.getElementById('cookie-banner');
+      if(a) a.addEventListener('click', function(){ localStorage.setItem(KEY,'accepted'); if(b) b.hidden=true; loadGA(); });
+      if(d) d.addEventListener('click', function(){ localStorage.setItem(KEY,'declined'); if(b) b.hidden=true; });
+    });
+  })();
+  </script>
+
 </body>
 </html>

@@ -162,7 +162,7 @@
         <p>Nous collectons uniquement les informations que vous choisissez de nous communiquer directement : votre nom, votre email, votre numéro de téléphone/WhatsApp, et le contenu de votre message lorsque vous utilisez le formulaire de contact de ce site ou que vous nous écrivez sur WhatsApp. Ces informations ne servent qu'à répondre à votre demande et organiser votre circuit — nous ne vendons ni ne partageons vos informations personnelles avec des tiers à des fins commerciales.</p>
         <p>Le formulaire de contact de ce site est traité par un service tiers (utilisé uniquement pour acheminer votre message jusqu'à notre boîte de réception), et les conversations WhatsApp sont soumises à la propre politique de confidentialité de WhatsApp.</p>
 
-        <h2>6. Cookies & Analyse d'Audience</h2>
+        <h2 id="cookies">6. Cookies & Analyse d'Audience</h2>
         <p>Ce site utilise des cookies pour comprendre comment les visiteurs utilisent le site (par exemple via Google Analytics), ce qui nous aide à améliorer les pages et le contenu que nous proposons. Vous pouvez accepter ou refuser les cookies non essentiels via la bannière de cookies affichée lors de votre première visite, et vous pouvez modifier votre choix à tout moment en effaçant les cookies de ce site dans votre navigateur. Refuser les cookies d'analyse n'affecte en rien votre capacité à naviguer sur le site ou à nous contacter.</p>
 
         <h2>7. Droit Applicable</h2>
@@ -203,6 +203,45 @@
      class="whatsapp-float sm:hidden flex items-center justify-center w-14 h-14 rounded-full text-2xl">
     💬
   </a>
+
+
+  <!-- Bandeau de consentement cookies -->
+  <div id="cookie-banner" class="fixed inset-x-0 bottom-0 z-[110] bg-slate-900 text-white p-4 md:p-5" role="dialog" aria-live="polite" aria-label="Consentement aux cookies" hidden>
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center gap-4 text-sm">
+      <p class="flex-1 text-center sm:text-left text-white/85">Nous utilisons des cookies pour comprendre comment les visiteurs utilisent ce site (Google Analytics). Vous pouvez accepter ou refuser. Voir notre <a href="terms.html#cookies" class="underline hover:text-white">Politique de Confidentialité</a>.</p>
+      <div class="flex gap-3 shrink-0">
+        <button type="button" id="cookie-decline" class="px-4 py-2 rounded-full border border-white/30 hover:bg-white/10 transition">Refuser</button>
+        <button type="button" id="cookie-accept" class="px-4 py-2 rounded-full bg-[var(--terracotta)] hover:bg-[var(--terracotta-dark)] transition font-semibold">Accepter</button>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var KEY='tmwm-cookie-consent', GA_ID='G-5XKWG25PRX';
+    function loadGA(){
+      if(window.__gaLoaded) return; window.__gaLoaded=true;
+      var s=document.createElement('script'); s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag=gtag;
+      gtag('js', new Date());
+      gtag('config', GA_ID, {anonymize_ip:true});
+    }
+    var consent = localStorage.getItem(KEY);
+    if(consent==='accepted'){ loadGA(); }
+    else if(consent!=='declined'){
+      document.addEventListener('DOMContentLoaded', function(){
+        var b=document.getElementById('cookie-banner'); if(b) b.hidden=false;
+      });
+    }
+    document.addEventListener('DOMContentLoaded', function(){
+      var a=document.getElementById('cookie-accept'), d=document.getElementById('cookie-decline'), b=document.getElementById('cookie-banner');
+      if(a) a.addEventListener('click', function(){ localStorage.setItem(KEY,'accepted'); if(b) b.hidden=true; loadGA(); });
+      if(d) d.addEventListener('click', function(){ localStorage.setItem(KEY,'declined'); if(b) b.hidden=true; });
+    });
+  })();
+  </script>
 
 </body>
 </html>
